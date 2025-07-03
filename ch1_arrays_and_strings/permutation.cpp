@@ -30,6 +30,7 @@ int main() {
     std::string str2 = "open";
     // std::string str1 = "nope";
     // std::string str2 = "ope";
+    
     if (permutation(&str1, &str2)) {
         std::cout << str1 << " and " << str2 << " are permutations";
     }
