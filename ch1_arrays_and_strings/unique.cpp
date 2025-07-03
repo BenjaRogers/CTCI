@@ -1,6 +1,7 @@
 #include <iostream>
 
-// Assume its non-case sensitive (a != A)
+// Assume its case sensitive (a != A)
+// Uses data structures other than string
 bool isUnique(std::string str) {
     bool charArray[128] = {}; // bools indexed by char->int value
     for (int i=0; i<str.length(); i++) {
@@ -23,6 +24,13 @@ int main () {
     int arraySize = sizeof(testArray) / sizeof(testArray[0]);
     for (int i=0; i<arraySize; i++) {
         //std::cout << testArray[i].length() << "\n";
-        std::cout << isUnique(testArray[i]) << "\n";
+        std::cout << "String '" << testArray[i] << "'";
+        if (isUnique(testArray[i])) {
+            std::cout << "is unique." << "\n";
+        }
+        else {
+            std::cout << "is not unique." << "\n";
+        }
+        
     }
 };
