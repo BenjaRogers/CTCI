@@ -14,7 +14,7 @@ bool checkReplace(std::string s1, std::string s2) {
             
         }
         else {
-            std:: cout << "not one away with replacement" << "\n";
+            std:: cout << " not one away with replacement" << "\n";
             return false;
         }
     }
