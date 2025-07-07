@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+
 // Print matrix for easier readability
 void printMatrix(int matrix[10][10]) {
     for (int i=0; i<10; i++) {
@@ -10,7 +11,8 @@ void printMatrix(int matrix[10][10]) {
         std::cout << "]" << "\n";
     }
     std::cout << "\n";
-}
+};
+
 // rotate matrix by 90 degrees in place
 void rotateMatrix(int matrix[10][10], int degrees) {
     // Convert angle in degrees to radians for trig functions.
@@ -58,7 +60,7 @@ void rotateMatrix(int matrix[10][10], int degrees) {
         xMax--;
     }
     printMatrix(matrix);
-}
+};
 
 int main() {
     // Generate 10x10 byte array of ints (4bytes)
@@ -73,4 +75,4 @@ int main() {
 
     std::cout << "Matrix rotated by 90 degrees: " << "\n";
     rotateMatrix(byteArray, 90);
-}
+};
