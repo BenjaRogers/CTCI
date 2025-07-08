@@ -28,6 +28,7 @@ bool isRotation(std::string s1, std::string s2, int* offset) {
 }
 
 int main() {
+    // Tests
     std::string str1 = "waterbottle";
     std::string str2 = "erbottlewat";
     int offset = 0;
@@ -37,5 +38,4 @@ int main() {
     else {
         std::cout << str1 << " and " << str2 << " are not rotations.";
     }
-    std::cout << offset;
 }
