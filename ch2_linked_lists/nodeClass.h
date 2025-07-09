@@ -8,7 +8,17 @@ class Node {
     Node(int d) {
         data = d;
     }
-
+    void printList() {
+        Node* n = this;
+        std::cout << "[" << n->data;
+        while (n ->next != nullptr) {
+            n = n->next;
+            std::cout << n->data;
+        }
+        if (n->next == nullptr) {
+            std::cout << "]" << "\n";
+        }
+    }
     void appendToTail(int d) {
         Node* end = new Node(d);
         //std::cout << &end << " " << end.data << "\n";
